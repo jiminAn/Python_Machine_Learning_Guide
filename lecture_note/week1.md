@@ -187,21 +187,146 @@
 
 ## 01-7. 넘파이 배열 ndarray 초기화 방법과 ndarray 차원과 크기를 변경하는 reshape()의 이해
 
+### ndarray를 편리하게 생성하기 
 
+: 특정 크기와 차원을 가진 ndarray를 연속 값이나 0 또는 1로 초기화 생성해야 할 경우 아래의 함수를 이용하여 생성 가능
+
+주로, 테스트 용으로 데이터를 만들거나 대규모의 데이터를 일괄적으로 초기화해야 할 경우 사용
+
+- arrange()
+- zeros()
+- ones()
+
+### ndarray의 타원과 크기를 변경하는 reshape()
+
+- ndarray를 특정 차원 및 형태로 변환, 변환 형태를 함수 인자로 부여하면 됨
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005165933306.png" alt="image-20201005165933306" style="zoom:33%;" />
+
+- 인자에 -1을 부여 시, -1 에 해당하는 axis 크기는 가변적이되 -1이 아닌 인자값에 해당하는 axis 크기는 인자값으로 가정하여 ndarray의 shape을 변화시킴
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005170056029.png" alt="image-20201005170056029" style="zoom:33%;" />
+
+- reshape()는 reshape(-1,1), reshape(-1,) 과 같은 형식으로 변환이 요구되는 경우가 많음
+
+  : 주로 머신러닝 API의 인자로 1차원 ndarray를 명확하게 2차원 ndarray로 변환하여 입력하기를 원하거나 또는 반대의 경우가 있을 경우 reshape()를 이용하여 ndarray의 형태를 변환시켜 주는데 사용
+
+  ![image-20201005170306157](/Users/mac/Library/Application Support/typora-user-images/image-20201005170306157.png)
+
+  
+
+  -> 실습
 
 ## 01-8. 넘파이 ndarray 의 인덱싱을 통한 데이터 세트 선택하기 - 01
+
+### ndarray의 데이터 세트 선택하기 - 인덱싱
+
+: **불린 인덱싱이 특히 중요**
+
+![image-20201005171737525](/Users/mac/Library/Application Support/typora-user-images/image-20201005171737525.png)
+
+### 단일 값 추출 - 1차원 ndarray
+
+- ndarray는 axis를 기준으로 0부터 시작하는 위치 인덱스 값을 가지고 있음
+
+  - 해당 인덱스 값을 [ ] 에 명시하여 단일 값을 추출한다.
+  - 마이너스가 인덱스로 사용되면 맨 뒤에서부터 위치를 지정함
+
+  <img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005172034365.png" alt="image-20201005172034365" style="zoom:33%;" />
+
+### 단일 값 추출 - 2차원 ndarray
+
+![image-20201005172134469](/Users/mac/Library/Application Support/typora-user-images/image-20201005172134469.png)
+
+
+
+### 슬라이싱 - 1차원 ndarray
+
+- 슬라이싱은 :을 이용하여 연속된 값을 선택
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005172244563.png" alt="image-20201005172244563" style="zoom:33%;" />
+
+### 슬라이싱 - 2차원 ndarray
+
+![image-20201005172329021](/Users/mac/Library/Application Support/typora-user-images/image-20201005172329021.png)
+
+### 팬시 인덱싱 - 1차원 ndarray
+
+: 리스트나 ndarray로 인덱스 집합을 지정하면 해당 위치의 인덱스에 해당하는 ndarray를 반환하는 방식의 인덱싱 방식
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005172802557.png" alt="image-20201005172802557" style="zoom:33%;" />
+
+### 팬시 인덱싱 - 2차원 ndarray
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005172856456.png" alt="image-20201005172856456" style="zoom:33%;" />
+
+### 불린 인덱싱
+
+: 조건 필터링과 검색을 동시에 할 수 있기 때문에 **매우 자주 사용되는 인덱싱 방식**
+
+![image-20201005173020397](/Users/mac/Library/Application Support/typora-user-images/image-20201005173020397.png)
 
 
 
 ## 01-9. 넘파이 ndarray 의 인덱싱을 통한 데이터 세트 선택하기 - 02
 
+-> 실습
+
+### 불린 인덱싱의 메커니즘
+
+![image-20201005173731479](/Users/mac/Library/Application Support/typora-user-images/image-20201005173731479.png)
+
 
 
 ## 01-10. 넘파이 ndarray의 정렬과 선형대수 연산
 
+### 배열의 정렬 -sort(), argsort()
 
+- sort()란?
 
+  : 넘파이 sort( ) 유형
 
+  1. np.sort() : 원 행렬은 그대로 유지한 채 원 행렬의 정렬된 행렬을 반환
+  2. ndarray.sort()는 원 행렬 자체를 정렬한 형태로 변환하며 반환 값은 None
+
+  - np.sort나 ndarray.sort()는 모두 기본적으로 오름차순으로 행렬 내 원소를 정렬, 내림차순 정렬은 [::-1] 붙이면 가능
+
+- 2차원 배열에서 axis기반의 sort()
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005174412344.png" alt="image-20201005174412344" style="zoom:33%;" />
+
+- argsort( )란?
+
+  - 원본 행렬 정렬 시 정렬된 행렬의 원래 인덱스를 필요로 할 때 np.argsort()를 이용
+  - 정렬 행렬의 원본 행렬 인덱스를 ndarray 형으로 반환
+
+  <img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005174543377.png" alt="image-20201005174543377" style="zoom:33%;" />
+
+  
+
+### 선형대수 연산 - 행렬 내적
+
+np.dot(A,B) : A와 B를 내적
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005174638415.png" alt="image-20201005174638415" style="zoom:30%;" />
+
+### 선형대수 연산 - 전치 행렬
+
+np.transpose(A) : A의 전치 행렬을 반환
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005174746846.png" alt="image-20201005174746846" style="zoom:30%;" />
+
+-> 실습
+
+### 넘파이 Summary
+
+- 넘파이는 파이썬 머신러닝을 구성하는 핵심 기반으로 반드시 이해가 필요
+
+- 넘파이 API는 매우 넓은 범위이므로 머신러닝 애플리케이션을 작성할 때 중요하게 활용될 수 있는 핵심 개념 위주로 숙지
+
+- 넘파이는 판다스에 비해서 친절한 API를 제공하지 않음
+
+  : 2차원의 데이터라면 데이터 가공을 위해서 넘파이 보다는 판다스를 이요하는 것이 보다 효율적
 
 
 
