@@ -130,6 +130,59 @@
 
 ## 01-6. 넘파이 배열 ndarray 소개 
 
+### 넘파이 ndarray
+
+- ndarray : N-Dimension Array 객체
+
+### ndarray 생성
+
+: numpy 모듈의 array() 함수로 생성, 인자로 주로 파이썬 리스뜨 또는 ndarray 입력
+
+ <img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005135921206.png" alt="image-20201005135921206" style="zoom:33%;" />
+
+### ndarray 형태(shape)와 차원
+
+- ndarray의 shape : ndarray.shape 속성 사용
+- ndarray의 차원: ndarray.ndim 속성 사용
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005140207220.png" alt="image-20201005140207220" style="zoom:33%;" />
+
+### ndarry type
+
+- ndarry내의 데이터 값은 숫자, 문자열, boolean 값 모두 가능
+
+  - 정수 : int (8/16/32 bit), unsigned int(8/16/32 bit)
+  - 실수 : float (16/32/64/128 bit)
+  - 이 보다 더 큰 숫자 값이나 정밀도를 위해 complex 타입도 제공
+
+- ndarry내의 데이터 타입은 그 연산의 특성상 같은 데이터 타입만 가능
+
+  : 즉, 한 개의 ndarry객체에 int,float가 함께 있을 수 없음
+
+- ndarry내의 데이터 타입은 ndarry.dtype으로 확인할 수 있음
+
+### ndarry 타입 변환
+
+- astype()을 이용하여 변환
+
+  - 변경을 원하는 타입을 해당 함수에 인자로 입력
+
+  - 대용량 데이터를 ndarry 만들 때 메모리를 절약하기 위해 자주 사용
+
+    예: 데이터에 주로 0~10 정도의 값만 있다면 64bit float -> 8bit integer로 형을 변환하면 메모리 절약됨
+
+- **대용량 데이터를 다룰 시 메모리 절약을 위해서 형변환을 특히 고려해야 함**
+
+###  넘파이 ndarry의 axis 축
+
+: ndarry는 shape는 행 , 열, 높이 단위로 부여되는 것이 아닌 axis0, axis1,.. 와 같이 axis 단위로 부여됨
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005141119848.png" alt="image-20201005141119848" style="zoom:33%;" />
+
+<img src="/Users/mac/Library/Application Support/typora-user-images/image-20201005141230618.png" alt="image-20201005141230618" style="zoom:33%;" />
+
+-> 실습
+
 
 
 ## 01-7. 넘파이 배열 ndarray 초기화 방법과 ndarray 차원과 크기를 변경하는 reshape()의 이해
