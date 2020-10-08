@@ -90,7 +90,7 @@
    - Tensor flow, keras, pytorch
 2. 배열/ 선형대수/ 통계 패키지
    - numpy
-   - Spicy
+   - scipy
 3. 데이터 핸들링
    - Pandas
 4. 시각화
