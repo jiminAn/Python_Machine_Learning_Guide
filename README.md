@@ -26,7 +26,10 @@
    9. 넘파이 ndarray 의 인덱싱을 통한 데이터 세트 선택하기 - 02
    10. 넘파이 ndarray의 정렬과 선형대수 연산
    
-   
+### 발표자료
+- link <https://github.com/jiminAn/Python_Machine_Learning_Guide/blob/master/lecture_note/week1.md>
+
+
 ## 2주차 (2020.10.28)
    
 ### 발표자 김영서 (발표 part 1.11~1.19)
