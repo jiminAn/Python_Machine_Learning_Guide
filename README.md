@@ -30,6 +30,6 @@
 - link <https://github.com/jiminAn/Python_Machine_Learning_Guide/blob/master/lecture_note/week1.md>
 
 
-## 2주차 (2020.11.04)
+## 2주차 (2020.11.11)
    
 ### 발표자 김영서 (발표 part 1.11~1.19)
