@@ -4,12 +4,12 @@
 - 안지민(팀장), 김예원, 김영서, 정은혜
 
 ## 수강강좌
-- 파이썬 머신러닝 완벽 가이드
-- link <https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%99%84%EB%B2%BD%EA%B0%80%EC%9D%B4%EB%93%9C#>
+- [파이썬 머신러닝 완벽 가이드](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%99%84%EB%B2%BD%EA%B0%80%EC%9D%B4%EB%93%9C#)
 
 ## 1주차 (2020.10.07) 
 
 ### 발표자 안지민 (발표 part 1.6~1.10)
+- [발표자료](https://github.com/jiminAn/Python_Machine_Learning_Guide/blob/master/lecture_note/week1.md)
 
 ### 목차
 
@@ -26,10 +26,19 @@
    9. 넘파이 ndarray 의 인덱싱을 통한 데이터 세트 선택하기 - 02
    10. 넘파이 ndarray의 정렬과 선형대수 연산
    
-### 발표자료
-- link <https://github.com/jiminAn/Python_Machine_Learning_Guide/blob/master/lecture_note/week1.md>
-
 
 ## 2주차 (2020.11.11)
    
-### 발표자 김영서 (발표 part 1.11~1.19)
+### 발표자 김영서 (발표 part 1.11~1.20)
+
+1. 파이썬 기반의 머신러닝과 생태계 이해
+   11. 판다스 개요와 기본 API-01
+   12. 판다스 개요와 기본 API-02
+   13. 판다스 DataFrame의 변환, 컬럼 세트 생성/수정, 삭제 및 Index 객체 소개
+   14. 판다스 데이터 셀렉션과 필터링 - 01
+   15. 판다스 데이터 셀렉션과 필터링 - 02
+   16. 판다스 Aggregation 함수와 Group by 수행
+   17. 판다스 결손 데이터 처리하기
+   19. 판다스 람다식 적용하여 데이터 가공하기
+   20. 파이썬 기반의 머신러닝과 생태계 이해 Summary
+   
