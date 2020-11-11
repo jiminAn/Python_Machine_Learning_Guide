@@ -30,7 +30,9 @@
 ## 2주차 (2020.11.11)
    
 ### 발표자 김영서 (발표 part 1.11~1.19)
+- [발표자료](https://github.com/jiminAn/Python_Machine_Learning_Guide/blob/master/lecture_note/%EB%B0%9C%ED%91%9C%EC%9E%90_%EA%B9%80%EC%98%81%EC%84%9C_20201111.pdf)
 
+### 목차
 1. 파이썬 기반의 머신러닝과 생태계 이해  
    11. 판다스 개요와 기본 API-01  
    12. 판다스 개요와 기본 API-02  
