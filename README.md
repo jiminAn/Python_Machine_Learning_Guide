@@ -9,7 +9,7 @@
 ## 1주차 (2020.10.07) 
 
 ### 발표자 안지민 (발표 part 1.6~1.10)
-- [발표자료](https://github.com/jiminAn/Python_Machine_Learning_Guide/blob/master/lecture_note/week1.md)
+- [발표자료](https://github.com/jiminAn/Python_Machine_Learning_Guide/blob/master/lecture_note/%EB%B0%9C%ED%91%9C%EC%9E%90_%EC%95%88%EC%A7%80%EB%AF%BC_20201008.md)
 
 ### 목차
 
